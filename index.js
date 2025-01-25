@@ -146,7 +146,7 @@ if (navigator.geolocation) {
 // Function to get user's location and set city in the input field
 const setUserCity = (latitude, longitude) => {
     const apiKey = "8e04dcc76fe0b319458bebe452a8578d"; // Replace with your actual API key
-    const apiUrl = `http://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=${1}&appid=${apiKey}`;
+    const apiUrl = `https://api.openweathermap.org/geo/1.0/reverse?lat=${latitude}&lon=${longitude}&limit=${1}&appid=${apiKey}`;
     
     fetch(apiUrl)
         .then((response) => {
