@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="icon" href="images/carIcon.png" type="image/png" />
+    <link rel="stylesheet" href="SignUp.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="image-side">
+            <img src="images/SignUpImage.jpg" alt="India" class="india-image">
+        </div>
+        <div class="form-side">
+            <h2>Join Us Now</h2>
+            <form action="index.html" method="GET" class="signup-form">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+                    <div class="underline"></div>
+                </div>
+                <div class="input-group">
+                    <label for="whatsapp">WhatsApp Contact</label>
+                    <input type="text" id="whatsapp" name="whatsapp" required placeholder="Enter your WhatsApp contact" />
+                    <div class="underline"></div>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email" />
+                    <div class="underline"></div>
+                </div>
+                <div class="input-group">
+                    <label for="agree">
+                        <input type="checkbox" id="agree" name="agree" required /> I agree to the terms and conditions
+                    </label>
+                </div>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

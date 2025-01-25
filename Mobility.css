@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#LogoContainer {
+    height: 100%;
+}
+
+#Logo {
+    height: 100%;
+    margin-left: 1%;
+}
+
+#NavItems {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Item {
+    color: white;
+    text-decoration: none;
+    margin: 2%;
+    transition: all 200ms ease-in-out;
+}
+
+.Item:hover {
+    transform: scale(1.2);
+}
+
+#SignUp {
+    padding: 0.5%;
+    margin-right: 1%;
+    border: none;
+    border-radius: 20px;
+    width: 8%;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    position: relative;
+    transition: all 100ms ease-in-out;
+}
+
+#SignUp:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+
+#apps-section {
+    padding: 100px 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #212121;
+    margin-bottom: 40px;
+}
+
+#app-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.category {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category h3 {
+    font-size: 1.6rem;
+    color: #ff7043;
+    margin-bottom: 15px;
+}
+
+.category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category ul li {
+    margin: 15px 0;
+}
+
+.category ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    display: block;
+    text-align: center;
+}
+
+.category ul li a img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: all 200ms ease-in-out 0ms;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+.category ul li a p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+footer {
+    background-color: #212121;
+    color: #dcdcdc;
+    padding: 60px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-section h4 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #ff7043;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #dcdcdc;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff7043;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #999;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: #ff7043;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

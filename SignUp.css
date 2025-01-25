@@ -1,0 +1,206 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body setup */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Gradient background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Main signup container */
+.signup-container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    height: 97vh;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Left side image container */
+.image-side {
+    flex: 1;
+    position: relative;
+    height: 100%;
+}
+
+.india-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Right side form container */
+.form-side {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(28, 28, 28, 0.9); /* Semi-transparent dark background */
+    color: #fff;
+    
+}
+
+/* Heading */
+h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    animation: slideIn 1.5s ease-out;
+}
+
+/* Form styling */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+/* Input fields */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+
+.input-group label {
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.input-group input {
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #ff7043;
+    color: #ff7043;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+/* Underline effect */
+.underline {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #aaa;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.input-group input:focus ~ .underline {
+    opacity: 1;
+}
+
+/* Checkbox */
+.input-group input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label[for="agree"] {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+label[for="agree"]:hover {
+    color: #ff7043;
+}
+
+/* Submit button */
+.submit-btn {
+    padding: 14px;
+    border: none;
+    background-color: #ff7043;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #ff5722;
+    transform: scale(1.05);
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-side {
+        height: 300px;
+    }
+
+    .form-side {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
